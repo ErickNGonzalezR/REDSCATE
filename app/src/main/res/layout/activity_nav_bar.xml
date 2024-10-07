@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border_navbar"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    tools:context=".nav_bar">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_home"
+        style="@style/AppTheme.boton_nav_bar"
+        android:drawableTop="@drawable/inicio"
+        android:text="Inicio"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_radar"
+        style="@style/AppTheme.boton_nav_bar"
+        android:drawableTop="@drawable/radar"
+        android:text="Radar"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_perfil"
+        style="@style/AppTheme.boton_nav_bar"
+        android:drawableTop="@drawable/perfil"
+        android:text="Perfil" />
+
+</LinearLayout>

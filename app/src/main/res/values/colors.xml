@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#fb0e1b</color>
+    <color name="text_color">#878282</color>
+    <color name="verde_sobreviviente">#189E5A</color>
+    <color name="rojo_rescatista">#FC5C65</color>
+    <color name="borde_boton_home">#7B7B7B</color>
+</resources>
