@@ -36,6 +36,7 @@
         <item name="android:paddingVertical">20dp</item>
         <item name="android:layout_margin">5dp</item>
     </style>
+
     <style name="AppTheme.boton_cards" parent="AppTheme">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">100dp</item>
@@ -46,21 +47,44 @@
         <item name="android:layout_margin">10dp</item>
         <item name="android:textColor">@color/black</item>
     </style>
+
     <style name="AppTheme.constraintlayout_cards" parent="AppTheme">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">100dp</item>
         <item name="android:background">@drawable/rounded_button_cards</item>
         <item name="android:orientation">horizontal</item>
     </style>
+
     <style name="AppTheme.image_cards" parent="AppTheme">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_margin">10dp</item>
     </style>
-    <style name="AppTheme.title_cards" parent="AppTheme">
 
+    <style name="AppTheme.title_cards" parent="AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">13dp</item>
+        <item name="android:layout_marginTop">27dp</item>
+        <item name="android:layout_marginStart">117dp</item>
     </style>
+
     <style name="AppTheme.text_cards" parent="AppTheme">
-    
-</style>
+        <item name="android:layout_width">250dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">117dp</item>
+        <item name="android:layout_marginBottom">28dp</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">10dp</item>
+    </style>
+
+    <style name="AppTheme.image2_cards" parent="AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/rounded_button_cards</item>
+        <item name="android:padding">10dp</item>
+    </style>
 </resources>

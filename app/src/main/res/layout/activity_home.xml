@@ -67,57 +67,128 @@
                     android:text="Acciones preventivas" />
 
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    style="@style/AppTheme.constraintlayout_cards"
                     android:id="@+id/button_reaccion_campo"
-                    >
+                    style="@style/AppTheme.constraintlayout_cards"
+                    android:layout_marginBottom="5dp">
 
                     <ImageView
                         style="@style/AppTheme.image_cards"
-                        android:id="@+id/image_reaccion_campo"
                         android:src="@drawable/reaccion_campo"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        />
-
+                        app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
-                        android:id="@+id/texto_linea_1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/roboto_bold"
+                        style="@style/AppTheme.title_cards"
                         android:text="Reacción en Campo"
-                        android:textColor="@color/black"
-                        android:textSize="13dp"
-                        android:textStyle="bold"
-
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        android:layout_marginTop="27dp"
-                        android:layout_marginStart="117dp"/>
+                        app:layout_constraintTop_toTopOf="parent" />
 
 
                     <TextView
-                        android:id="@+id/texto_linea_2"
-                        android:layout_width="250dp"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/roboto_regular"
+                        style="@style/AppTheme.text_cards"
                         android:text="Aprende las acciones necesarias para tomar acción en emergencias en el campo."
-                        android:textColor="@color/black"
-                        android:textSize="10dp"
-
-
                         app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        android:layout_marginStart="117dp"
-                        android:layout_marginBottom="28dp"/>
+                        app:layout_constraintStart_toStartOf="parent" />
 
                     <ImageView
-                        android:id="@+id/imageView5"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/rounded_button_cards"
-                        android:padding="10dp"
+                        style="@style/AppTheme.image2_cards"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:srcCompat="@drawable/flecha" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/button_reaccion_ciudad"
+                    style="@style/AppTheme.constraintlayout_cards"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        style="@style/AppTheme.image_cards"
+                        android:src="@drawable/reaccion_ciudad"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        style="@style/AppTheme.title_cards"
+                        android:text="Reacción en Ciudad"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <TextView
+                        style="@style/AppTheme.text_cards"
+                        android:text="Aprende a actuar de forma segura ante incendios en espacios públicos."
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <ImageView
+                        style="@style/AppTheme.image2_cards"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:srcCompat="@drawable/flecha" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/button_reaccion_casa"
+                    style="@style/AppTheme.constraintlayout_cards"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        style="@style/AppTheme.image_cards"
+                        android:src="@drawable/reaccion_casa"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        style="@style/AppTheme.title_cards"
+                        android:text="Reacción en Casa"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <TextView
+                        style="@style/AppTheme.text_cards"
+                        android:text="Aprende cómo actuar rápidamente ante un incendio en tu casa."
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <ImageView
+                        style="@style/AppTheme.image2_cards"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:srcCompat="@drawable/flecha" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/button_reaccion_trabajo"
+                    style="@style/AppTheme.constraintlayout_cards"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        style="@style/AppTheme.image_cards"
+                        android:src="@drawable/reaccion_trabajo"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        style="@style/AppTheme.title_cards"
+                        android:text="Reacción en trabajo"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <TextView
+                        style="@style/AppTheme.text_cards"
+                        android:text="Aprende cómo actuar con un incendio en tu lugar de trabajo."
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <ImageView
+                        style="@style/AppTheme.image2_cards"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:srcCompat="@drawable/flecha" />
@@ -128,10 +199,118 @@
                     style="@style/AppTheme.titulo_home"
                     android:text="Kit de emergencia" />
 
-                <TextView
-                    style="@style/AppTheme.titulo_home"
-                    android:text="Guias de aprendizaje" />
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/button_kit_emergencia"
+                    style="@style/AppTheme.constraintlayout_cards"
+                    android:layout_marginBottom="5dp">
 
+                    <ImageView
+                        style="@style/AppTheme.image_cards"
+                        android:src="@drawable/kit_emergencia"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        style="@style/AppTheme.title_cards"
+                        android:text="Kit de emergencia"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <TextView
+                        style="@style/AppTheme.text_cards"
+                        android:text="Reúne los elementos más importantes para enfrentar un incendio de forma segura"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <ImageView
+                        style="@style/AppTheme.image2_cards"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:srcCompat="@drawable/flecha" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/AppTheme.titulo_home"
+                        android:layout_marginEnd="5dp"
+                        android:text="Guias de aprendizaje" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/escudo" />
+                </LinearLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/button_partes_extintor"
+                    style="@style/AppTheme.constraintlayout_cards"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        style="@style/AppTheme.image_cards"
+                        android:src="@drawable/extintor"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        style="@style/AppTheme.title_cards"
+                        android:text="Partes del extintor"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <TextView
+                        style="@style/AppTheme.text_cards"
+                        android:text="Aprende a identificar las partes de un extintor para un uso correcto"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <ImageView
+                        style="@style/AppTheme.image2_cards"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:srcCompat="@drawable/flecha" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/button_tipos_fuego"
+                    style="@style/AppTheme.constraintlayout_cards"
+                    android:layout_marginBottom="148dp">
+
+                    <ImageView
+                        style="@style/AppTheme.image_cards"
+                        android:src="@drawable/reaccion_campo"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        style="@style/AppTheme.title_cards"
+                        android:text="Tipos de fuego"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <TextView
+                        style="@style/AppTheme.text_cards"
+                        android:text="Conoce los diferentes tipos de fuego y cómo extinguirlos"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <ImageView
+                        style="@style/AppTheme.image2_cards"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:srcCompat="@drawable/flecha" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
             </LinearLayout>
 
