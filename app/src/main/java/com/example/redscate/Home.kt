@@ -40,11 +40,6 @@ class Home : AppCompatActivity() {
         buttonHome.setTextColor(Color.parseColor("#fb0e1b"))
 
         // Configura el listener para el botón
-        buttonHome.setOnClickListener {
-            // Crea el intent para dirigir a nav_bar Activity
-            val intent = Intent(this, Home::class.java)
-            startActivity(intent) // Inicia la actividad nav_bar
-        }
         // Encuentra el botón por ID
         val buttonPerfil = findViewById<AppCompatButton>(R.id.button_perfil)
 

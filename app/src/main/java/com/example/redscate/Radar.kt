@@ -37,11 +37,7 @@ class Radar : AppCompatActivity() {
         // Cambiar el color del texto a rojo
         buttonradar.setTextColor(Color.parseColor("#fb0e1b"))
         // Configura el listener para el botón
-        buttonradar.setOnClickListener {
-            // Crea el intent para dirigir a nav_bar Activity
-            val intent = Intent(this, Home::class.java)
-            startActivity(intent) // Inicia la actividad nav_bar
-        }
+
         // Encuentra el botón por ID
         val buttonPerfil = findViewById<AppCompatButton>(R.id.button_perfil)
 
@@ -52,12 +48,14 @@ class Radar : AppCompatActivity() {
             startActivity(intent) // Inicia la actividad nav_bar
         }
         // Encuentra el botón por ID
-        val buttonRadar = findViewById<AppCompatButton>(R.id.button_radar)
+        // Configura el listener para el botón
+
+        val buttonHome = findViewById<AppCompatButton>(R.id.button_home)
 
         // Configura el listener para el botón
-        buttonRadar.setOnClickListener {
+        buttonHome.setOnClickListener {
             // Crea el intent para dirigir a nav_bar Activity
-            val intent = Intent(this, Radar::class.java)
+            val intent = Intent(this, Home::class.java)
             startActivity(intent) // Inicia la actividad nav_bar
         }
         // Fin dela  configuracion de los botones del nav bar

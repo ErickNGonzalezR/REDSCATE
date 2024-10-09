@@ -11,7 +11,7 @@
         <item name="android:layout_marginHorizontal">20dp</item>
         <item name="android:padding">10dp</item>
         <item name="android:textColor">@color/text_color</item>
-        <item name="android:textSize">17px</item>
+        <item name="android:textSize">17dp</item>
         <item name="android:layout_marginVertical">5dp</item>
         <item name="android:background">@color/white</item>
         <item name="android:fontFamily">@font/roboto_regular</item>
@@ -23,8 +23,9 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:fontFamily">@font/roboto_bold</item>
-        <item name="android:textSize">16dp</item>
+        <item name="android:textSize">17dp</item>
         <item name="android:layout_marginVertical">16dp</item>
+        <item name="android:textColor">@color/black</item>
     </style>
 
     <style name="AppTheme.boton_perfil" parent="AppTheme">
@@ -66,19 +67,19 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:fontFamily">@font/roboto_bold</item>
         <item name="android:textColor">@color/black</item>
-        <item name="android:textSize">13dp</item>
-        <item name="android:layout_marginTop">27dp</item>
-        <item name="android:layout_marginStart">117dp</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:layout_marginTop">22dp</item>
+        <item name="android:layout_marginStart">120dp</item>
     </style>
 
     <style name="AppTheme.text_cards" parent="AppTheme">
         <item name="android:layout_width">250dp</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginStart">117dp</item>
-        <item name="android:layout_marginBottom">28dp</item>
+        <item name="android:layout_marginStart">120dp</item>
+        <item name="android:layout_marginBottom">23dp</item>
         <item name="android:fontFamily">@font/roboto_regular</item>
         <item name="android:textColor">@color/black</item>
-        <item name="android:textSize">10dp</item>
+        <item name="android:textSize">13dp</item>
     </style>
 
     <style name="AppTheme.image2_cards" parent="AppTheme">

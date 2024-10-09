@@ -36,11 +36,7 @@ class Perfil : AppCompatActivity() {
         // Cambiar el color del texto a rojo
         buttonperfil.setTextColor(Color.parseColor("#fb0e1b"))
         // Configura el listener para el botón
-        buttonperfil.setOnClickListener {
-            // Crea el intent para dirigir a nav_bar Activity
-            val intent = Intent(this, Home::class.java)
-            startActivity(intent) // Inicia la actividad nav_bar
-        }
+
         // Encuentra el botón por ID
         val buttonHome = findViewById<AppCompatButton>(R.id.button_home)
 
@@ -54,11 +50,6 @@ class Perfil : AppCompatActivity() {
         val buttonPerfil = findViewById<AppCompatButton>(R.id.button_perfil)
 
         // Configura el listener para el botón
-        buttonPerfil.setOnClickListener {
-            // Crea el intent para dirigir a nav_bar Activity
-            val intent = Intent(this, Perfil::class.java)
-            startActivity(intent) // Inicia la actividad nav_bar
-        }
         // Encuentra el botón por ID
         val buttonRadar = findViewById<AppCompatButton>(R.id.button_radar)
 

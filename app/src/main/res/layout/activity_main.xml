@@ -45,60 +45,60 @@
             android:gravity="center"
             android:orientation="horizontal"
             android:weightSum="3"
-        app:layout_constraintBottom_toTopOf="@+id/textVersion"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imageView2"
-        app:layout_constraintVertical_bias="0.78">
+            app:layout_constraintBottom_toTopOf="@+id/textVersion"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageView2"
+            app:layout_constraintVertical_bias="0.78">
 
-        <ImageView
-            android:id="@+id/onda_izquierda"
-            android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:paddingLeft="20dp"
-        android:src="@drawable/onda_izquierda"
-        android:animation="@anim/shake_iz"/>
+            <ImageView
+                android:id="@+id/onda_izquierda"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:animation="@anim/shake"
+                android:paddingLeft="20dp"
+                android:src="@drawable/onda_izquierda" />
 
-        <TextView
-            android:id="@+id/sos"
-            android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:fontFamily="@font/roboto_bold"
-        android:text="S.O.S"
-        android:textColor="@color/white"
-        android:textSize="24sp"
-        android:gravity="center"
-        android:animation="@anim/shake"/>
+            <TextView
+                android:id="@+id/sos"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:animation="@anim/shake"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="center"
+                android:text="S.O.S"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
 
-        <ImageView
-            android:id="@+id/onda_derecha"
-            android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:paddingRight="20dp"
-        android:src="@drawable/onda_derecha"
-        android:animation="@anim/shake"/>
-    </LinearLayout>
+            <ImageView
+                android:id="@+id/onda_derecha"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:animation="@anim/shake"
+                android:paddingRight="20dp"
+                android:src="@drawable/onda_derecha" />
+        </LinearLayout>
 
-    <!--<androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button_sos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/rounded_button_red"
-        android:paddingHorizontal="79dp"
-        android:paddingVertical="13dp"
-        android:text="S.O.S"
-        android:textColor="@color/white"
-        android:textSize="50px"
-        app:layout_constraintBottom_toTopOf="@+id/textVersion"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imageView2"
-        app:layout_constraintVertical_bias="0.78"
-        android:fontFamily="@font/roboto_bold"
-        />-->
+        <!--<androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_sos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button_red"
+            android:paddingHorizontal="79dp"
+            android:paddingVertical="13dp"
+            android:text="S.O.S"
+            android:textColor="@color/white"
+            android:textSize="50px"
+            app:layout_constraintBottom_toTopOf="@+id/textVersion"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageView2"
+            app:layout_constraintVertical_bias="0.78"
+            android:fontFamily="@font/roboto_bold"
+            />-->
 
         <TextView
             android:id="@+id/textVersion"
@@ -109,7 +109,7 @@
             android:fontFamily="@font/roboto_regular"
             android:text="@string/version_1_1"
             android:textColor="@color/black"
-            android:textSize="20px"
+            android:textSize="15dp"
             app:layout_constraintBottom_toTopOf="@id/nav"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
