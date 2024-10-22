@@ -1,14 +1,18 @@
 package com.example.redscate
 
+import android.content.Context
 import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
+import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatButton
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.redscate.Cambio.BotonesManager.configurarBotones
 
 class Home : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -60,5 +64,18 @@ class Home : AppCompatActivity() {
         }
 
         // Fin dela  configuracion de los botones del nav bar
+
+        val button_s = findViewById<AppCompatButton>(R.id.button_sobreviviente)
+        val button_r = findViewById<AppCompatButton>(R.id.button_rescatista)
+        val constraintLayout = findViewById<ConstraintLayout>(R.id.constraintLayout)
+        val imageView3 = findViewById<ImageView>(R.id.imageView3)
+
+        val sharedPreferences = getSharedPreferences("MyPreferences", Context.MODE_PRIVATE)
+
+        var perfil = sharedPreferences.getString("perfil", "Valor por defecto")
+
+        perfil = perfil.toString()
+        configurarBotones(this, button_s, button_r, perfil, constraintLayout, imageView3)
+
     }
 }

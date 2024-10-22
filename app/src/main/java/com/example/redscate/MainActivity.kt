@@ -30,9 +30,6 @@ class MainActivity : AppCompatActivity() {
 
         val imageViewIz: ImageView = findViewById(R.id.onda_izquierda)
         imageViewIz.startAnimation(shake)
-
-        val textSos: TextView = findViewById(R.id.sos)
-        textSos.startAnimation(shake)
         //fin de animacion de onda
 
         // Inicio de la configuracion de los Botones del nav bar

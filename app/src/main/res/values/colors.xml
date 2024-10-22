@@ -7,4 +7,6 @@
     <color name="verde_sobreviviente">#189E5A</color>
     <color name="rojo_rescatista">#FC5C65</color>
     <color name="borde_boton_home">#7B7B7B</color>
+    <color name="azul_rescatista">#3552E0</color>
+
 </resources>

@@ -39,28 +39,10 @@
                 android:gravity="center_horizontal"
                 android:orientation="vertical">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="horizontal">
-
-                    <androidx.appcompat.widget.AppCompatButton
-                        android:id="@+id/button_sobreviviente"
-                        style="@style/AppTheme.boton_perfil"
-                        android:background="@drawable/rounded_button_verde"
-                        android:drawableLeft="@drawable/cruz"
-                        android:text="Sobreviviente"
-                        android:textColor="@color/white" />
-
-                    <androidx.appcompat.widget.AppCompatButton
-                        android:id="@+id/button_rescatista"
-                        style="@style/AppTheme.boton_perfil"
-                        android:background="@drawable/rounded_button_blanco"
-                        android:drawableLeft="@drawable/escudo"
-                        android:text="Rescatista"
-                        android:textColor="@color/borde_boton_home" />
-                </LinearLayout>
+                <include
+                    android:id="@+id/include_boton_sobreviviente"
+                    layout="@layout/boton_sobreviviente"
+                    />
 
                 <TextView
                     style="@style/AppTheme.titulo_home"
@@ -76,7 +58,8 @@
                         android:src="@drawable/reaccion_campo"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        app:layout_constraintTop_toTopOf="parent"
+                        />
 
                     <TextView
                         style="@style/AppTheme.title_cards"

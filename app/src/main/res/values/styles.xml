@@ -9,10 +9,10 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginHorizontal">20dp</item>
-        <item name="android:padding">10dp</item>
+        <item name="android:padding">5dp</item>
         <item name="android:textColor">@color/text_color</item>
-        <item name="android:textSize">17dp</item>
-        <item name="android:layout_marginVertical">5dp</item>
+        <item name="android:textSize">13dp</item>
+        <item name="android:layout_marginVertical">2dp</item>
         <item name="android:background">@color/white</item>
         <item name="android:fontFamily">@font/roboto_regular</item>
         <item name="android:elevation">0dp</item>
@@ -87,5 +87,33 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:background">@drawable/rounded_button_cards</item>
         <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="AppTheme.perfil_text" parent="AppTheme">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">17dp</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:layout_marginStart">48dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+    </style>
+    <style name="AppTheme.perfil_text_2" parent="AppTheme">
+        <item name="android:layout_width">300dp</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:layout_marginStart">48dp</item>
+        <item name="android:layout_marginTop">1dp</item>
+    </style>
+    <style name="AppTheme.perfil_title" parent="AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:layout_marginTop">20dp</item>
+
     </style>
 </resources>
