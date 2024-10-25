@@ -5,6 +5,138 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".popup_perfil">
+    tools:context=".PopupPerfil">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rounded_button_blanco">
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Configura tu perfíl"
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/titulo_1"
+            style="@style/AppTheme.perfil_title"
+            android:text="Informacion personal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/titulo" />
+
+        <TextView
+            android:id="@+id/nombre"
+            style="@style/AppTheme.perfil_text"
+            android:text="Nombre:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titulo_1" />
+
+        <TextView
+            android:id="@+id/nombre_apellido"
+            style="@style/AppTheme.perfil_text_2"
+            android:layout_height="wrap_content"
+            android:text=""
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nombre" />
+        <TextView
+            android:id="@+id/perfil"
+            style="@style/AppTheme.perfil_text"
+            android:text="Perfil"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nombre_apellido" />
+        <Spinner
+            android:id="@+id/profile"
+            style="@style/AppTheme.perfil_text_2"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/perfil" />
+        <TextView
+            android:id="@+id/edad"
+            style="@style/AppTheme.perfil_text"
+            android:text="Edad:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile" />
+
+        <TextView
+            android:id="@+id/edad_2"
+            style="@style/AppTheme.perfil_text_2"
+            android:text=""
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edad" />
+
+        <TextView
+            android:id="@+id/rh"
+            style="@style/AppTheme.perfil_text"
+            android:text="RH:"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/edad"
+            app:layout_constraintTop_toBottomOf="@+id/profile" />
+
+        <TextView
+            android:id="@+id/rh_2"
+            style="@style/AppTheme.perfil_text_2"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/edad_2"
+            app:layout_constraintTop_toBottomOf="@+id/rh" />
+
+        <TextView
+            android:id="@+id/titulo_2"
+            style="@style/AppTheme.perfil_title"
+            android:text="Informacion de contacto"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edad_2" />
+
+        <TextView
+            android:id="@+id/nombre_c"
+            style="@style/AppTheme.perfil_text"
+            android:text="Nombre:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titulo_2" />
+
+        <TextView
+            android:id="@+id/nameC"
+            style="@style/AppTheme.perfil_text_2"
+            android:text=""
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nombre_c" />
+
+        <TextView
+            android:id="@+id/parentesco"
+            style="@style/AppTheme.perfil_text"
+            android:text="Parentesco:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nameC" />
+
+        <TextView
+            android:id="@+id/relationship"
+            style="@style/AppTheme.perfil_text_2"
+            android:text=""
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/parentesco" />
+
+        <TextView
+            android:id="@+id/telefono"
+            style="@style/AppTheme.perfil_text"
+            android:text="Telefono:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relationship" />
+
+        <TextView
+            android:id="@+id/numberPhone"
+            style="@style/AppTheme.perfil_text_2"
+            android:text=""
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/telefono" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

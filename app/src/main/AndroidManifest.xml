@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Redscate"
         tools:targetApi="31">
         <activity
+            android:name=".ConfigurarPerfil"
+            android:exported="false" />
+        <activity
             android:name=".popup_perfil"
             android:exported="false" />
         <activity

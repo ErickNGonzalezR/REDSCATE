@@ -1,5 +1,6 @@
 package com.example.redscate
 
+import android.annotation.SuppressLint
 import android.provider.Settings
 import android.content.Context
 
@@ -7,7 +8,12 @@ import android.content.Intent
 import android.graphics.Color
 import android.graphics.drawable.Drawable
 import android.os.Bundle
+import android.view.Gravity
+import android.view.MotionEvent
+import android.view.View
 import android.widget.ImageView
+import android.widget.LinearLayout
+import android.widget.PopupWindow
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -20,6 +26,7 @@ import com.example.redscate.Cambio.BotonesManager.configurarBotones
 
 
 class Perfil : AppCompatActivity() {
+    @SuppressLint("ClickableViewAccessibility")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -28,7 +35,9 @@ class Perfil : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+
         }
+
 
         // Obtienes la referencia al TextView (asegúrate de que sea un TextView o el tipo correcto de vista)
         val nombre: TextView = findViewById(R.id.nombre_apellido)
@@ -55,8 +64,8 @@ class Perfil : AppCompatActivity() {
         // Guardar 7 variables String
         editor.putString("nombre", nombreA)
         editor.putString("edad", "10")
-        editor.putString("rh", "jhg")
-        editor.putString("perfil", "r")
+        editor.putString("rh", "j")
+        editor.putString("perfil", "s")
         editor.putString("nombreC", "hgj")
         editor.putString("parentesco", "jgh")
         editor.putString("telefono", "jgh")
@@ -144,7 +153,6 @@ class Perfil : AppCompatActivity() {
         configurarBotones(this, button_s, button_r, perfil, constraintLayout, imageView3)
 
 
-
         // Inicio de la configuracion de los Botones del nav bar
         val buttonperfil = findViewById<AppCompatButton>(R.id.button_perfil)
         // Obtener el drawable
@@ -185,5 +193,22 @@ class Perfil : AppCompatActivity() {
             startActivity(intent) // Inicia la actividad nav_bar
         }
         // Fin dela  configuracion de los botones del nav bar
+        val buttonConfigurar = findViewById<AppCompatButton>(R.id.button_configurar)
+
+        // Agrega el listener al botón
+        buttonConfigurar.setOnClickListener {
+            // Navegar a otra actividad
+            val intent = Intent(this, ConfigurarPerfil::class.java)
+            startActivity(intent)
+        }
+
+        if (perfil != "s"){
+            val perfilrescatista = findViewById<ConstraintLayout>(R.id.perfil_rescatista)
+            perfilrescatista.visibility =View.VISIBLE
+        }else{
+            val perfilsobreviviente = findViewById<ConstraintLayout>(R.id.perfil_sobreviviente)
+            perfilsobreviviente.visibility =View.VISIBLE
+        }
+
     }
 }

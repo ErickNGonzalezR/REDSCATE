@@ -91,58 +91,114 @@
                 app:layout_constraintStart_toEndOf="@id/edad_2"
                 app:layout_constraintTop_toBottomOf="@+id/rh"
                 />
-            <TextView
-                android:id="@+id/titulo_2"
-                style="@style/AppTheme.perfil_title"
-                android:text="Informacion de contacto"
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/perfil_sobreviviente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rh_2"
+                android:visibility="invisible">
+
+                <TextView
+                    android:id="@+id/titulo_2"
+                    style="@style/AppTheme.perfil_title"
+                    android:text="Informacion de contacto"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/nombre_c"
+                    style="@style/AppTheme.perfil_text"
+                    android:text="Nombre:"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/titulo_2" />
+                <TextView
+                    android:id="@+id/nameC"
+                    style="@style/AppTheme.perfil_text_2"
+                    android:text=""
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/nombre_c"
+                    />
+
+                <TextView
+                    android:id="@+id/parentesco"
+                    style="@style/AppTheme.perfil_text"
+                    android:text="Parentesco:"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/nameC" />
+                <TextView
+                    android:id="@+id/relationship"
+                    style="@style/AppTheme.perfil_text_2"
+                    android:text=""
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/parentesco"
+                    />
+
+                <TextView
+                    android:id="@+id/telefono"
+                    style="@style/AppTheme.perfil_text"
+                    android:text="Telefono:"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/relationship" />
+                <TextView
+                    android:id="@+id/numberPhone"
+                    style="@style/AppTheme.perfil_text_2"
+                    android:text=""
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/telefono"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/perfil_rescatista"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rh_2"
+                android:visibility="invisible">
+
+                <TextView
+                    android:id="@+id/titulo_3"
+                    style="@style/AppTheme.perfil_title"
+                    android:text="Informacion de rescarista"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/codigo"
+                    style="@style/AppTheme.perfil_text"
+                    android:layout_width="wrap_content"
+                    android:text="Codigo rescatista:"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/titulo_3" />
+                <TextView
+                    android:id="@+id/codigo_"
+                    style="@style/AppTheme.perfil_text_2"
+                    android:text=""
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/codigo"
+                    />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_configurar"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/rounded_button_red"
+                android:text="Configure tu perfíl"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/white"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/edad_2" />
-
-            <TextView
-                android:id="@+id/nombre_c"
-                style="@style/AppTheme.perfil_text"
-                android:text="Nombre:"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/titulo_2" />
-            <TextView
-                android:id="@+id/nameC"
-                style="@style/AppTheme.perfil_text_2"
-                android:text=""
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/nombre_c"
-                />
-
-            <TextView
-                android:id="@+id/parentesco"
-                style="@style/AppTheme.perfil_text"
-                android:text="Parentesco:"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/nameC" />
-            <TextView
-                android:id="@+id/relationship"
-                style="@style/AppTheme.perfil_text_2"
-                android:text=""
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/parentesco"
-                />
-
-            <TextView
-                android:id="@+id/telefono"
-                style="@style/AppTheme.perfil_text"
-                android:text="Telefono:"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/relationship" />
-            <TextView
-                android:id="@+id/numberPhone"
-                style="@style/AppTheme.perfil_text_2"
-                android:text=""
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/telefono"
-                />
+                app:layout_constraintBottom_toTopOf="@id/include_navbar"
+                android:paddingHorizontal="50dp"/>
 
             <include
-                android:id="@+id/include"
+                android:id="@+id/include_navbar"
                 layout="@layout/activity_nav_bar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

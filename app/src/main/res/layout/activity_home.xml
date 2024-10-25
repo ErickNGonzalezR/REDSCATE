@@ -70,7 +70,7 @@
 
                     <TextView
                         style="@style/AppTheme.text_cards"
-                        android:text="Aprende las acciones necesarias para tomar acción en emergencias en el campo."
+                        android:text="Aprende como actuar rápidamente ante un incendio en campo."
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent" />
 
