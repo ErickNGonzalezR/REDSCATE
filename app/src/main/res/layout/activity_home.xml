@@ -7,6 +7,14 @@
     android:layout_height="match_parent"
     tools:context=".Home">
 
+    <View
+        android:id="@+id/blur_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:visibility="gone" />
+
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/nav"
         android:layout_width="match_parent"
@@ -14,7 +22,6 @@
         android:background="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent">
 
         <include
@@ -41,8 +48,7 @@
 
                 <include
                     android:id="@+id/include_boton_sobreviviente"
-                    layout="@layout/boton_sobreviviente"
-                    />
+                    layout="@layout/boton_sobreviviente" />
 
                 <TextView
                     style="@style/AppTheme.titulo_home"
@@ -58,8 +64,7 @@
                         android:src="@drawable/reaccion_campo"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        />
+                        app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
                         style="@style/AppTheme.title_cards"

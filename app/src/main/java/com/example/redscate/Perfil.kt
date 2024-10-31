@@ -9,8 +9,10 @@ import android.graphics.Color
 import android.graphics.drawable.Drawable
 import android.os.Bundle
 import android.view.Gravity
+import android.view.LayoutInflater
 import android.view.MotionEvent
 import android.view.View
+import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.PopupWindow
@@ -50,27 +52,17 @@ class Perfil : AppCompatActivity() {
             findViewById<ConstraintLayout>(R.id.constraintLayout) // Asegúrate de asignar el ID a tu ConstraintLayout
         val imageView3 = findViewById<ImageView>(R.id.imageView3)
 
-
-        // Función que obtiene el nombre del dispositivo
-        fun getDeviceName(context: Context): String {
-            return Settings.Global.getString(context.contentResolver, "device_name")
-        }
-
-        val nombreA = getDeviceName(this)
-
         val sharedPreferences = getSharedPreferences("MyPreferences", Context.MODE_PRIVATE)
+
         val editor = sharedPreferences.edit()
+        editor.putString("edad", "")
+        editor.putString("rh", "")
+        editor.putString("perfil", "")
+        editor.putString("nombreC", "")
+        editor.putString("parentesco", "")
+        editor.putString("telefono", "")
+        editor.apply() // Aplicar los cambios*/
 
-        // Guardar 7 variables String
-        editor.putString("nombre", nombreA)
-        editor.putString("edad", "10")
-        editor.putString("rh", "j")
-        editor.putString("perfil", "s")
-        editor.putString("nombreC", "hgj")
-        editor.putString("parentesco", "jgh")
-        editor.putString("telefono", "jgh")
-
-        editor.apply() // Aplicar los cambios
         nombre.text = sharedPreferences.getString("nombre", "Valor por defecto")
         val age = sharedPreferences.getString("edad", "Valor por defecto")
         if (age != "") {
@@ -202,13 +194,42 @@ class Perfil : AppCompatActivity() {
             startActivity(intent)
         }
 
-        if (perfil != "s"){
+        if (perfil != "s") {
             val perfilrescatista = findViewById<ConstraintLayout>(R.id.perfil_rescatista)
-            perfilrescatista.visibility =View.VISIBLE
-        }else{
+            perfilrescatista.visibility = View.VISIBLE
+        } else {
             val perfilsobreviviente = findViewById<ConstraintLayout>(R.id.perfil_sobreviviente)
-            perfilsobreviviente.visibility =View.VISIBLE
+            perfilsobreviviente.visibility = View.VISIBLE
         }
 
+
+        /*when (botonPrincipal) {
+            1 -> when (botonSecundario) {
+                1 ->
+                    2 ->
+                    3 ->
+                        4 ->
+            }
+
+            2 ->
+                3
+
+            ->
+                4
+
+            ->
+                5
+
+            ->
+                6
+
+            ->
+                7
+
+            ->
+        }
     }
+*/
+
+}
 }
